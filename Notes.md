@@ -43,5 +43,7 @@ CSS Notes
 - Grid is focused on providing tools for both dimensions; width and height, whereas Flexbox is focused on width alone 
 - `display: grid;` in the `.grid-container` (parent of each container which is .grid-item)
 - `grid-template-columns: <>`; write the width of each column you want. `grid-template-rows: <>` same thing. set to `auto`, divides the space evenly 
--  `grid-column-gap/grid-row-gap: <>`  space between each row/column
+-  `grid-column-gap/grid-row-gap: <>`  space between each row/column. done in `grid-gap: <row> <column>`
+- `grid-column/grid-row: <start> /<end>` , start and end of the column. e.g. 1/3 would place the first container in 1 and end and at 3, if you align left then column 2 would be empty. `1/3` same as `1/ span 2`. Start point and how many rows/columns it spans
+- `grid-area: 2/1/span 2/span 3 ` . `rowstart/columnstart/rowend/ columnend `
 
