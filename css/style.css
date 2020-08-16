@@ -88,7 +88,7 @@ ul li {
     flex-flow: row wrap;
     /* align-items: center;
     justify-content: space-between; */
-    margin: 100px 100px 250px 100px;
+    margin: 100px 100px 200px 100px;
     border-radius: 25px;
     /* justify-content: space-around; */
 }
@@ -222,6 +222,10 @@ ul.experience-list li:last-child:before {
     margin: 20px 0 20px 25%;
 }
 
+.project-container {
+    border-radius: 5px;
+
+}
 
 #wrapper-contact {
     background: #1F2833;
