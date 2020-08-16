@@ -90,7 +90,7 @@ ul li {
     justify-content: space-between; */
     margin: 100px 100px 250px 100px;
     border-radius: 25px;
-
+    /* justify-content: space-around; */
 }
 
 #profile-picture {
@@ -139,8 +139,8 @@ ul li {
 }
 
 ul.experience-list {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
     padding-left: 15px;
     position: relative;
 }
@@ -213,4 +213,29 @@ ul.experience-list li:last-child:before {
   /* last li's line */
   height: 6px;
   /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+
+#projects-overview {
+    background: #C5C6C7;
+    border-radius: 5px;
+    width: 50%;
+    margin: 20px 0 20px 25%;
+}
+
+
+#wrapper-contact {
+    background: #1F2833;
+    display: flex;
+    margin: 100px 100px 250px 100px;
+    border-radius: 25px;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.contact-icon {
+    display: flex;
+    width: 100px;
+    margin: 75px 50px 0 50px;
+
 }
