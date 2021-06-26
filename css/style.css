@@ -53,7 +53,7 @@ ul li {
     top: 0;
     background: #E3EBFF;
     display: flex;
-    flex;direction: row;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 14px 16px;
@@ -93,8 +93,7 @@ ul li {
 }
 
 .section-title {
-    /* width: 100%; */
-    margin: auto;
+    width: 100%;
     color: #DC493A;
     font-size: 40px;
     text-align: center;
@@ -118,9 +117,7 @@ ul li {
     float: left;
 }
 
-#welcome {
-    /* width: 50%; */
-}
+
 
 #welcome-hello {
     margin: 20% 0px 0px 20%;
@@ -276,21 +273,24 @@ ul.experience-list li:last-child:before {
     display: flex;
     width: 100%;
     text-align: center;
+    margin: 0 10% 25px 10% ;
 }
 
 
 #wrapper-contact {
     background: #1F2833;
-    /* display: flex; */
-    /* margin: 100px 100px 250px 100px; */
+    display: flex;
+    margin: 100px 100px 250px 100px;
     border-radius: 25px;
-    margin: auto;
-    text-align: center;
+    flex-flow: row wrap;
+    justify-content: center;
+
 }
 
 .contact-icon {
     display: flex;
     width: 100px;
-    margin: 75px 50px 0 50px;
+    margin: auto;
+    position: relative;
 
 }
