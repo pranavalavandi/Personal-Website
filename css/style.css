@@ -5,13 +5,25 @@ blue #66FCF1
 green #45A29E */
 
 
+/* #DC493A- Cinnabar red
+#E7F0FF- Alice blue
+#E3EBFF- Lavender blue
+#ECE8EF- magnolia grey
+#4392F1- dodger blue */
 
 
 /* body: font-family: 'Lato', sans-serif;
 heading: font-family: 'Old Standard TT', serif; */
 
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+  }
+
 body {
-    background-image: url("../images/double-bubble-dark.png");
+    background-image: url("../images/moroccan-flower-dark.png");
     background-attachment: fixed;
     font-size: 1.25em;
     font-family: sans-serif;
@@ -28,7 +40,7 @@ img {
 }
 
 h2 {
-    color: #45A29E;
+    color: #4392F1;
 }
 ul li {
     padding: 5px 0px;
@@ -39,30 +51,35 @@ ul li {
     width: 100%;
     position: fixed;
     top: 0;
-    background: #0B0C10;
+    background: #E3EBFF;
     display: flex;
     flex;direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 14px 16px;
 }
 
 .navigation-bar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: #000000;
+  padding: 7px;
+  border-radius: 5px;
   text-decoration: none;
-
 }
 
 .navigation-bar a:hover {
-  color: #45A29E;
+  color: #E7F0FF;
+  background-color: #DC493A;
 }
 
 #name-navigation {
-    width: 60%;
-    color: white;
+    /* width: 60%; */
+    margin-right: 50%;
+    color: #002f80;
+}
+
+#name-navigation:hover{
+    color: #DC493A;
+
 }
 
 #title {
@@ -71,19 +88,20 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #66FCF1;
+    color: #4392F1;
 
 }
 
 .section-title {
-    width: 100%;
-    color: #66FCF1;
+    /* width: 100%; */
+    margin: auto;
+    color: #DC493A;
     font-size: 40px;
     text-align: center;
 }
 
 .wrapper {
-    background: #1F2833;
+    background: #E7F0FF;
     display: flex;
     flex-flow: row wrap;
     /* align-items: center;
@@ -101,42 +119,40 @@ ul li {
 }
 
 #welcome {
-    width: 50%;
+    /* width: 50%; */
 }
 
 #welcome-hello {
-    margin: 200px 0px 0px 200px;
+    margin: 20% 0px 0px 20%;
     font-size: 50px;
-    color: #66FCF1;
+    color: #DC493A;
 }
 
 #welcome-hello-message {
-    margin: 150px 0px 0px 250px;
+    margin: 10% 0px 0px 10%;
     font-size: 50px;
-    color: #45A29E;
+    color: #4392F1;
 }
 
 
 #about-paragraph {
     width: 40%;
     border-radius: 5px;
-    color: #C5C6C7;
+    color: #000000;
     margin: 75px 50px 75px 50px;
 }
 
 
-#about-info {
+#about-info {   
     margin: 0px 0px 30px 125px;
-    background-color: #C5C6C7;
-    opacity: 0.8;
+    background-color: #ECE8EF;
+    /* opacity: 0.8; */
     border-radius: 25px;
     padding: 10px 30px 10px 15px;
     color: #0B0C10;
 }
 
-#about-paragraph {
-    text-align: justify;
-}
+
 
 ul.experience-list {
     width: 60%;
@@ -153,7 +169,7 @@ ul.experience-list li{
 }
 
 .company {
-    color: #45A29E;
+    color: #45a26c;
     display: inline;
     margin-right: 1.2em;
 }
@@ -163,8 +179,8 @@ ul.experience-list li{
     display: inline-block;
     padding: 0 12px;
     margin: -5px 0.5em 0 0 !important;
-    background-color: #C5C6C7;
-    color: #0B0C10;
+    background-color: #000000;
+    color: #E7F0FF;
     border-radius: 5px;
 }
 
@@ -173,12 +189,12 @@ ul.experience-list li{
     width: 70%;
     margin: 1.2em 0 1em 0;
     border-radius: 5px;
-    color: #C5C6C7;
+    color: #000000;
 }
 
 .time-period {
     float: right;
-    color: #fd5c06;
+    color: #4392F1;
 }
 
 
@@ -218,23 +234,58 @@ ul.experience-list li:last-child:before {
 #projects-overview {
     background: #C5C6C7;
     border-radius: 5px;
-    width: 50%;
-    margin: 20px 0 20px 25%;
+    width: 100%;
+    margin: 0 15% 5% 15%;
+    text-align: center;
+}
+
+#projects-wrapper {
+    width: 80%;
+    /* text-align: justify; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
 }
 
 .project-container {
-    border-radius: 5px;
+
+    max-width: 300px;
+    padding: 0 20px 20px 20px;
+    border-radius: 25px;
+    background: #4392F1;
+    display: inline-block;
+    text-align: center;
+    /* padding: 25px; */
+    margin: 20px;
 
 }
 
+
+.project-name a {
+    text-decoration: none;
+    color: #E3EBFF;
+}
+
+.project-name a :hover {
+    text-decoration: none;
+    color: #DC493A;
+}
+
+#contact-message {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+
 #wrapper-contact {
     background: #1F2833;
-    display: flex;
-    margin: 100px 100px 250px 100px;
+    /* display: flex; */
+    /* margin: 100px 100px 250px 100px; */
     border-radius: 25px;
-    flex-flow: row wrap;
-    justify-content: center;
-
+    margin: auto;
+    text-align: center;
 }
 
 .contact-icon {
