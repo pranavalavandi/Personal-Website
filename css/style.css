@@ -175,7 +175,7 @@ ul.experience-list li{
     color: black;
     display: inline-block;
     padding: 0 12px;
-    margin: -5px 0.5em 0 0 !important;
+    margin: -5px 0.5em 0 0;
     background-color: #000000;
     color: #E7F0FF;
     border-radius: 5px;
