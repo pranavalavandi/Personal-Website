@@ -64,7 +64,7 @@ img {
     /* width: 100%; */
     /* position: fixed; */
     /* top: 0; */
-    background: #E3EBFF;
+    /* background: #E3EBFF; */
 }
 
 
@@ -75,6 +75,8 @@ header {
     padding: 0 5%;
     background: #E3EBFF;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
@@ -139,87 +141,65 @@ button:hover {
 }
 
 
-
-
-
-/* .navigation-bar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background: #E3EBFF;
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .navigation-bar a {
-  color: #000000;
-  padding: 0.3em;
-  border-radius: 0.5em;
-  text-decoration: none;
-}
-
-.navigation-bar a:hover {
-  color: #E7F0FF;
-  background-color: #DC493A;
-  
-} */
-
-/* #logo{
-    width: 9em;
-    cursor: pointer;
-}
-
-
-nav ul{
-    list-style: none;
-}
-
-nav ul li{
-    display: inline-block;
-    padding: 3%;
-
-} */
-
-/* .nav-links li a{
-    transition: all 0.3s ease 0s;
-} */
-
-
-
-
-
-
 .wrapper {
     background: #E7F0FF;
     display: flex;
     flex-flow: row wrap;
     /* align-items: center;
     justify-content: space-between; */
-    margin: 100px 100px 200px 100px;
+    margin: 3em 5em 0 5em ;
     border-radius: 25px;
     /* justify-content: space-around; */
 }
 
+
+
+
+/* Home section stuff */
+
+#home{
+    margin-top: 5em;
+}
+
+#home-wrapper{
+    background: #E7F0FF;
+    display: flex;
+    flex-flow: row-wrap;
+    margin: 3em 5em 0 5em ;
+    border-radius: 25px;
+}
+
+#home-text{
+    display: flex;
+    flex-flow: column;
+}
+
+
+
 #profile-picture {
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
     width: 30%;
-    float: left;
+    /* float: left; */
 }
 
 
 
 #welcome-hello {
-    margin: 20% 0px 0px 20%;
-    font-size: 50px;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 3vw;
     color: #DC493A;
+    text-align: left;
 }
 
 #welcome-hello-message {
-    margin: 10% 0px 0px 10%;
-    font-size: 50px;
+    margin: 10% 0 0 20%;
+    font-size: 2vw;
     color: #4392F1;
+    text-align: left;
 }
+
 
 
 #about-paragraph {
