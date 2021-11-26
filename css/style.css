@@ -39,7 +39,7 @@ html, body{
 body {
     background-image: url("../images/moroccan-flower-dark.png");
     background-attachment: fixed;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-family: sans-serif;
 }
 
@@ -60,20 +60,11 @@ img {
 
 /* Navigation bar stuff */
 
-
-.navigation-bar {
-    /* width: 100%; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* background: #E3EBFF; */
-}
-
-
 header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    padding: 0 5%;
+    /* padding: 0 5%; */
     background: #E3EBFF;
     width: 100%;
     position: fixed;
@@ -90,8 +81,7 @@ header {
 
 .navigation-links li {
     display: inline-block;
-    padding: 0 2em;
-    
+    /* padding: 0.2em;     */
 }
 
 .navigation-links li a {
@@ -104,7 +94,7 @@ header {
 }
 
 button {
-    padding: 1em 2.5em;
+    /* padding: 1em 2.5em; */
     background-color: #DC493A;
     border: none;
     border-radius: 1em;
@@ -120,24 +110,12 @@ button:hover {
 
 
 
-
-
-
-
-
-/* #title {
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #4392F1;
-
-} */
+/* General classes */
 
 .section-title {
     width: 100%;
     color: #DC493A;
-    font-size: 40px;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -146,11 +124,10 @@ button:hover {
     background: #E7F0FF;
     display: flex;
     flex-flow: row wrap;
-    /* align-items: center;
-    justify-content: space-between; */
+    align-items: center;
     margin: 3em 5em 0 5em ;
-    border-radius: 25px;
-    /* justify-content: space-around; */
+    border-radius: 2.5em;
+    justify-content: space-around;
 }
 
 
@@ -161,22 +138,6 @@ button:hover {
 #home{
     margin-top: 5em;
 }
-
-#home-wrapper{
-    background: #E7F0FF;
-    display: flex;
-    flex-flow: row-wrap;
-    margin: 3em 5em 0 5em ;
-    border-radius: 25px;
-}
-
-#home-text{
-    display: flex;
-    flex-flow: column;
-}
-
-
-
 #profile-picture {
     padding-top: 0.5em;
     padding-left: 0.5em;
@@ -184,39 +145,47 @@ button:hover {
     /* float: left; */
 }
 
-
+#home-text{
+    display: flex;
+    flex-flow: column;
+}
 
 #welcome-hello {
     margin-top: 10%;
     margin-left: 10%;
-    font-size: 3vw;
+    font-size: 5rem;
     color: #DC493A;
     text-align: left;
 }
 
 #welcome-hello-message {
     margin: 10% 0 0 20%;
-    font-size: 2vw;
+    font-size: 3.5rem;
     color: #4392F1;
     text-align: left;
 }
 
 
 
+/* About section */
+
 #about-paragraph {
     width: 40%;
-    border-radius: 5px;
+    border-radius: 2em;
     color: #000000;
-    margin: 75px 50px 75px 50px;
+    /* margin: 75px 50px 75px 50px; */
+    background-color: #DC493A;
+    /* text-align: center; */
+    /* float: left; */
 }
 
 
 #about-info {   
-    margin: 0px 0px 30px 125px;
+    /* margin: 0px 0px 30px 125px; */
     background-color: #ECE8EF;
     /* opacity: 0.8; */
-    border-radius: 25px;
-    padding: 10px 30px 10px 15px;
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
     color: #0B0C10;
 }
 
@@ -224,9 +193,6 @@ button:hover {
 
 ul.experience-list {
     width: 60%;
-    margin-left: 20%;
-    padding-left: 15px;
-    position: relative;
 }
 
 ul.experience-list li{
