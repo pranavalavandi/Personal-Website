@@ -62,9 +62,9 @@ img {
 
 header {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    /* padding: 0 5%; */
+    padding: 0 5%;
     background: #E3EBFF;
     width: 100%;
     position: fixed;
@@ -81,7 +81,7 @@ header {
 
 .navigation-links li {
     display: inline-block;
-    /* padding: 0.2em;     */
+    padding: 0.2em;    
 }
 
 .navigation-links li a {
@@ -100,11 +100,73 @@ button {
     border-radius: 1em;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    font-size: 1.25rem;
 }
 
 button:hover {
     background-color: #4392F1;
 }
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .navigation-links {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #4392F1;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navigation-links.active {
+        left: 0;
+    }
+
+    .navigation-links li a {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
 
 
 
@@ -141,7 +203,7 @@ button:hover {
 #profile-picture {
     padding-top: 0.5em;
     padding-left: 0.5em;
-    width: 30%;
+    /* width: 30%; */
     /* float: left; */
 }
 
