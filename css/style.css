@@ -20,8 +20,11 @@ heading: font-family: 'Old Standard TT', serif; */
 html, body{
     scroll-behavior: smooth;
 
-    margin:0;
+    margin: 0;
+    height:100%;
+    width:100%;
     padding:0;
+
 
 
 }
@@ -196,16 +199,33 @@ button:hover {
 
 
 /* Home section stuff */
-
 #home{
-    margin-top: 5em;
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/photo-beach.JPG);
+    height: 100%; 
+    width: 100%;
+    background-position: center left ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#profile-picture {
-    padding-top: 0.5em;
-    padding-left: 0.5em;
-    /* width: 30%; */
-    /* float: left; */
+
+.wrapper-home {
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 3em 5em 0 5em ;
+    border-radius: 2.5em;
+    justify-content: space-around;
 }
+
+
 
 #home-text{
     display: flex;
@@ -213,10 +233,10 @@ button:hover {
 }
 
 #welcome-hello {
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 10%;
     font-size: 5rem;
-    color: #DC493A;
+    color: #ECE8EF;
     text-align: left;
 }
 
@@ -228,6 +248,16 @@ button:hover {
 }
 
 
+@media only screen and (max-width: 768px) {
+    #welcome-hello-message {
+        /* margin: 10% 0 0 20%; */
+        font-size: 3.5vh;
+        color: #4392F1;
+        text-align: left;
+    }
+}
+
+
 
 /* About section */
 
@@ -236,11 +266,27 @@ button:hover {
     border-radius: 2em;
     color: #000000;
     /* margin: 75px 50px 75px 50px; */
+    
+    padding: 2% 1%;
     background-color: #DC493A;
-    /* text-align: center; */
+    text-align: center;
     /* float: left; */
 }
 
+@media only screen and (max-width: 768px) {
+    #about-paragraph {
+        /* width: 90%; */
+        width: max-content;
+        border-radius: 2em;
+        color: #000000;
+        margin-bottom: 2em;
+        margin: 1em 1em;
+        padding: 2% 1%;
+        background-color: #DC493A;
+        text-align: center;
+        /* float: left; */
+    }
+}
 
 #about-info {   
     /* margin: 0px 0px 30px 125px; */
@@ -248,14 +294,17 @@ button:hover {
     /* opacity: 0.8; */
     border-radius: 2em;
     padding: 0.5em 1.5em;
+    margin: 1em 1em;
     color: #0B0C10;
 }
 
 
 
 ul.experience-list {
-    width: 60%;
+    max-width: 200em;
 }
+
+
 
 ul.experience-list li{
     padding-left: 33px;
@@ -327,6 +376,13 @@ ul.experience-list li:last-child:before {
   /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
 }
 
+
+
+
+
+
+/* PROJECTS SECTION */
+
 #projects-overview {
     background: #C5C6C7;
     border-radius: 5px;
@@ -336,17 +392,28 @@ ul.experience-list li:last-child:before {
 }
 
 #projects-wrapper {
-    width: 80%;
+    /* width: 80%; */
     /* text-align: justify; */
     display: flex;
-    justify-content: center;
+    /* grid-row: 1 / span 2; */
+    justify-content: space-between;
     margin: auto;
+    flex-direction: row;
 
 }
 
+@media only screen and (max-width: 900px) {
+    #projects-wrapper {
+
+        flex-direction: column;
+    
+    }
+}
+
+
 .project-container {
 
-    max-width: 300px;
+    max-width: 50em;
     padding: 0 20px 20px 20px;
     border-radius: 25px;
     background: #4392F1;
