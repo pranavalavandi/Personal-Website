@@ -1,1 +1,1 @@
-My attempt at creating a personal website over the break :)
+Repository for my personal website. Hope you like it :grinning:
